@@ -23,7 +23,10 @@ namespace CITesting
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = DoSomething();
+            CILib.CIStuff s = new CILib.CIStuff();
+            //label1.Text = s.GetNowDateTimeString();
+            label1.Text = s.GiveMeAString();
+            //label1.Text = DoSomething();
         }
     }
 }
